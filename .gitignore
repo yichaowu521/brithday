@@ -1,0 +1,5 @@
+# Claude 配置文件
+.claude/
+
+# 临时文件
+b64_map.txt
