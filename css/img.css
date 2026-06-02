@@ -5,33 +5,33 @@
     font-weight: 300;
 }
 body {
-    font-family: "Microsoft YaHei", serif;
+    font-family: "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "STHeiti", sans-serif;
     color: white;
     font-weight: 300;
 }
 body ::-webkit-input-placeholder {
     /* WebKit browsers */
-    font-family: "Microsoft YaHei", serif;
+    font-family: "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "STHeiti", sans-serif;
     color: white;
     font-weight: 300;
 }
 body :-moz-placeholder {
     /* Mozilla Firefox 4 to 18 */
-    font-family: "Microsoft YaHei", serif;
+    font-family: "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "STHeiti", sans-serif;
     color: white;
     opacity: 1;
     font-weight: 300;
 }
 body ::-moz-placeholder {
     /* Mozilla Firefox 19+ */
-    font-family: "Microsoft YaHei", serif;
+    font-family: "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "STHeiti", sans-serif;
     color: white;
     opacity: 1;
     font-weight: 300;
 }
 body :-ms-input-placeholder {
     /* Internet Explorer 10+ */
-    font-family: "Microsoft YaHei", serif;
+    font-family: "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "STHeiti", sans-serif;
     color: white;
     font-weight: 300;
 }
@@ -39,7 +39,6 @@ body :-ms-input-placeholder {
     background: #00CCFF;
     background: -webkit-linear-gradient(top left, #00CCFF 0%, #66CCFF 100%);
     background: linear-gradient(to bottom right, #66CCFF 0%, #FFCCFF 100%);
-    background-color:rgba(255,255,255,0.9);
     position: absolute;
     top:0;
     left: 0;
@@ -88,7 +87,7 @@ form input {
     margin: 0 auto 10px auto;
     display: block;
     text-align: center;
-    font-family: "Microsoft YaHei", serif;
+    font-family: "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "STHeiti", sans-serif;
     font-size: 18px;
     color: white;
     -webkit-transition-duration: 0.25s;
@@ -109,7 +108,7 @@ form button {
     appearance: none;
     outline: 0;
     background-color: white;
-    font-family: "Microsoft YaHei", serif;
+    font-family: "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "STHeiti", sans-serif;
     border: 0;
     padding: 10px 15px;
     color: #ee9ca7;
@@ -242,6 +241,8 @@ form button:hover {
     padding: 0;
     margin: 0;
     z-index: 2;
+    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
 }
 
 .img-ul {

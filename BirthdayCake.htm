@@ -216,14 +216,16 @@
 
 <audio id="audio_music" data-id="audio_music" autoplay="autoplay" preload="auto" loop>
     <source src="music/1.mp3" type="audio/mpeg" />
-    <embed hidden="true" autostart="true" height="0" width=0 loop="true" src="music/1.mp3" autoplay="autoplay"/>
 </audio>
+<script src="js/wechat-audio.js"></script>
 <script>
     window.addEventListener("DOMContentLoaded", function() {
-        var audio = document.getElementById("audio_music");  // 获取音频元素
+        var audio = document.getElementById("audio_music");
         audio.addEventListener("loadedmetadata", function() {
-            audio.currentTime = 0;  // 将播放时间设置为0秒
+            audio.currentTime = 0;
         });
+        // 微信音频自动播放
+        initWechatAudio('audio_music');
     });
 </script>
 

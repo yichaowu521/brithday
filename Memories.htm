@@ -372,9 +372,11 @@
 
 <audio id="audio_music" data-id="audio_music" autoplay="autoplay" preload="auto" loop>
     <source src="music/1.mp3" type="audio/mpeg" />
-    <embed hidden="true" autostart="true" height="0" width=0 loop="true"
-           src="music/1.mp3" autoplay="autoplay"/>
 </audio>
+<script src="js/wechat-audio.js"></script>
+<script>
+    initWechatAudio('audio_music');
+</script>
 
 <script>
     var audio = document.getElementById("audio_music");

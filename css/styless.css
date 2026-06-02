@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    font-family: '楷体', sans-serif;
+    font-family: '楷体', 'STKaiti', 'KaiTi SC', sans-serif;
 }
 
 html, body {
@@ -159,6 +159,7 @@ html, body {
 
 .come {
     animation-delay: 0.4s;
+    -webkit-animation: coming 2s;
     animation: coming 2s;
     opacity: 1;
 }
@@ -452,8 +453,9 @@ html, body {
 
 .lk1, .lk2 {
     text-decoration: none;
-    font-family: Microsoft YaHei, serif;
+    font-family: "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "STHeiti", sans-serif;
     color: #fff;
+    -webkit-transition: all 0.5s;
     transition: all 0.5s;
 }
 
@@ -461,11 +463,11 @@ html, body {
     width: 170px;
     height: 60px;
     border: 2px solid #fff;
-    -webkit-border: 1px solid #fff;
     border-radius: 30px;
     font-size: 23px;
     text-align: center;
     background: #FFCCFF;
+    -webkit-transition: all 0.8s;
     transition: all 0.8s;
 }
 
@@ -481,6 +483,7 @@ html, body {
 
 a.lk1:hover {
     color: #ee9ca7;
+    -webkit-transition: all 0.5s;
     transition: all 0.5s;
 }
 
@@ -488,11 +491,13 @@ a.lk1:hover {
     background-color: #fff;
     background-color: rgba(255, 255, 255, 2);
     border: 2px solid #BBB;
+    -webkit-transition: all 0.8s;
     transition: all 0.8s;
 }
 
 a.lk2:hover {
     color: #ee9ca7;
+    -webkit-transition: all 0.5s;
     transition: all 0.5s;
 }
 
@@ -500,5 +505,6 @@ a.lk2:hover {
     background-color: #fff;
     background-color: rgba(255, 255, 255, 2);
     border: 2px solid #BBB;
+    -webkit-transition: all 0.8s;
     transition: all 0.8s;
 }

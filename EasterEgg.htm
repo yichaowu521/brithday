@@ -3,7 +3,7 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=0.3, maxmum-scale=1.0, minimum-scale=0.3">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
     <title>Happy birthday!</title>
     <style type="text/css">
         body {
@@ -135,6 +135,7 @@
             position: absolute;
             top: 50%;
             left: 50%;
+            -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
             margin-top: -20px;
             font-size: 46px;
@@ -549,19 +550,6 @@
 
 </body>
 
-<!--<audio id="audio_music" data-id="audio_music" autoplay="autoplay" preload="auto" loop>-->
-<!--  <source src="https://music.163.com/song/media/outer/url?id=461090506.mp3" type="audio/mpeg" />-->
-<!--  <embed hidden="true" autostart="true" height="0" width=0 loop="true" src="https://music.163.com/song/media/outer/url?id=461090506.mp3" autoplay="autoplay"/>-->
-<!--</audio>-->
-<!--<script>-->
-<!--  window.addEventListener("DOMContentLoaded", function() {-->
-<!--    var audio = document.getElementById("audio_music");  // 获取音频元素-->
-<!--    audio.addEventListener("loadedmetadata", function() {-->
-<!--      audio.currentTime = 60;  // 将播放时间设置为60秒-->
-<!--    });-->
-<!--  });-->
-<!--</script>-->
-
 <style>
     #div_play_button {
         position: fixed;
@@ -610,9 +598,11 @@
 
 <audio id="audio_music" data-id="audio_music" autoplay="autoplay" preload="auto" loop>
     <source src="music/1.mp3" type="audio/mpeg" />
-    <embed hidden="true" autostart="true" height="0" width=0 loop="true"
-           src="music/1.mp3" autoplay="autoplay"/>
 </audio>
+<script src="js/wechat-audio.js"></script>
+<script>
+    initWechatAudio('audio_music');
+</script>
 
 <script>
     var audio = document.getElementById("audio_music");

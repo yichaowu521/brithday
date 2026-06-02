@@ -23,8 +23,10 @@ $(function () {
             top:"85%"
         },2000);
     },9000);
-	$(window).click(function(){
-		$('audio')[0].play();
-	});
-	window.audio=$('audio')[0].play();
+
+    // 非微信环境回退：首次点击/触摸时播放音频
+    $(window).one('click touchstart', function(){
+        var a = $('audio')[0];
+        if (a) a.play();
+    });
 })

@@ -138,7 +138,9 @@
 	bottom: 50%;
 	margin-bottom:50%;
 	overflow: hidden;
+	-webkit-transform-origin:center bottom;
 	transform-origin:center bottom;
+	-webkit-animation:box_to_point 18.5s 0s,bounce 2.5s 18.5s;
 	animation:box_to_point 18.5s 0s,bounce 2.5s 18.5s;
 }
 
@@ -314,9 +316,9 @@
 	top:10%;
 }
 .ly-stxt01 {
-	font-family: Microsoft YaHei;
+	font-family: "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "STHeiti", sans-serif;
 	font-size: 30px;
-	font-color: #000;
+	color: #000;
 	position: relative;
 	left: 5%;
 	top: 5%;
@@ -335,16 +337,16 @@
 }
 @-webkit-keyframes ly-stxt01_move{
 	0% {opacity:0;}
-	8% {opacity:0;}
+	8% {opacity:1;}
 	90% {opacity:1;}
 	98% {opacity:0;}
 	100% {opacity:0;}
 }
 
 .ly-stxt02 {
-	font-family: Microsoft YaHei;
+	font-family: "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "STHeiti", sans-serif;
 	font-size: 30px;
-	font-color: #000;
+	color: #000;
 	position: relative;
 	left: 5%;
 	top: 5%;
@@ -371,9 +373,9 @@
 }
 
 .ly-stxt03 {
-	font-family: Microsoft YaHei;
+	font-family: "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "STHeiti", sans-serif;
 	font-size: 30px;
-	font-color: #000;
+	color: #000;
 	position: relative;
 	left: 5%;
 	top: 5%;
@@ -400,9 +402,9 @@
 }
 
 .ly-stxt04 {
-	font-family: Microsoft YaHei;
+	font-family: "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "STHeiti", sans-serif;
 	font-size: 30px;
-	font-color: #000;
+	color: #000;
 	position: relative;
 	left: 5%;
 	top: 5%;
@@ -429,9 +431,9 @@
 }
 
 .ly-stxt05 {
-	font-family: Microsoft YaHei;
+	font-family: "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "STHeiti", sans-serif;
 	font-size: 30px;
-	font-color: #000;
+	color: #000;
 	position: relative;
 	left: 5%;
 	top: 5%;
@@ -458,9 +460,9 @@
 }
 
 .ly-stxt06 {
-	font-family: Microsoft YaHei;
+	font-family: "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "STHeiti", sans-serif;
 	font-size: 30px;
-	font-color: #000;
+	color: #000;
 	position: relative;
 	right: 5%;
 	top: 5%;
@@ -486,9 +488,9 @@
 }
 
 .ly-stxt07 {
-	font-family: Microsoft YaHei;
+	font-family: "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "STHeiti", sans-serif;
 	font-size: 30px;
-	font-color: #000;
+	color: #000;
 	position: relative;
 	right: 5%;
 	top: 5%;
@@ -515,9 +517,9 @@
 }
 
 .ly-stxt08 {
-	font-family: Microsoft YaHei;
+	font-family: "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "STHeiti", sans-serif;
 	font-size: 30px;
-	font-color: #000;
+	color: #000;
 	position: relative;
 	right: 5%;
 	top: 5%;
@@ -544,9 +546,9 @@
 }
 
 .ly-stxt09 {
-	font-family: Microsoft YaHei;
+	font-family: "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "STHeiti", sans-serif;
 	font-size: 30px;
-	font-color: #000;
+	color: #000;
 	position: relative;
 	right: 5%;
 	top: 5%;
@@ -573,9 +575,9 @@
 }
 
 .ly-stxt10 {
-	font-family: Microsoft YaHei;
+	font-family: "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "STHeiti", sans-serif;
 	font-size: 30px;
-	font-color: #000;
+	color: #000;
 	position: relative;
 	right: 5%;
 	top: 5%;
@@ -611,6 +613,7 @@
 	top:-100%;
 	background-color: #ccc;
 	border-radius:3px;
+	-webkit-transition: all 2s;
 	transition: all 2s;
 }
 .active .timeline {
@@ -634,6 +637,7 @@
 	-ms-border-radius: 10px;
 	-o-border-radius: 10px;
 	border-radius: 10px;
+	-webkit-transition: all 0.3s;
 	transition: all 0.3s; 
 }
 .active .timepoint {
@@ -655,6 +659,7 @@
 	-ms-border-radius: 10px;
 	-o-border-radius: 10px;
 	border-radius: 10px;
+	-webkit-transition: all 1s;
 	transition: all 1s;
 }
 .active .timepoint11 {
@@ -677,6 +682,7 @@
 	opacity: 0;
 	-webkit-transform: scale(0.5, 0.5);
 	transform: scale(0.5, 0.5);
+	-webkit-transition: all 1s;
 	transition: all 1s;
 }
 .active .ly-box11{
@@ -700,6 +706,7 @@
 	opacity: 0;
 	-webkit-transform: scale(0.5, 0.5);
 	transform: scale(0.5, 0.5);
+	-webkit-transition: all 0.5s;
 	transition: all 0.5s;
 }
 .active .ly-triangle11 {
@@ -718,6 +725,7 @@
 	border-radius: 8px;
 	opacity:0;
 	overflow: hidden;
+	-webkit-transition:all 0.5s;
 	transition:all 0.5s;
 }
 .active .ly-imgbox11{
@@ -731,14 +739,15 @@
 }
 /*文本*/
 .ly-txt11 {
-	font-family: Microsoft YaHei;
+	font-family: "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "STHeiti", sans-serif;
 	font-size: 30px;
 	text-shadow: 2px 2px 4px #000;
-	font-color: #000;
+	color: #000;
 	position: absolute;
 	left: 3%;
 	top: 4%;
 	opacity: 0;
+	-webkit-transition: all 0.5s;
 	transition: all 0.5s;
 }
 
@@ -749,15 +758,16 @@
 
 
 .ly-txt12 {
-	font-family: Microsoft YaHei;
+	font-family: "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "STHeiti", sans-serif;
 	font-size: 20px;
 	text-indent:2em;
-	font-color: #000;
+	color: #000;
 	position: absolute;
 	padding-top: 20px;
 	left: 5%;
 	top: 12%;
 	opacity: 0;
+	-webkit-transition: all 1s;
 	transition: all 1s;
 }
 
@@ -781,6 +791,7 @@
 	opacity: 0;
 	-webkit-transform: scale(0.5, 0.5);
 	transform: scale(0.5, 0.5);
+	-webkit-transition: all 1s;
 	transition: all 1s;
 }
 .active .ly-box12{
@@ -804,6 +815,7 @@
 	opacity: 0;
 	-webkit-transform: scale(0.5, 0.5);
 	transform: scale(0.5, 0.5);
+	-webkit-transition: all 1s;
 	transition: all 1s;
 }
 .active .ly-triangle12 {
@@ -815,14 +827,15 @@
 }
 /*文本*/
 .ly-txt13 {
-	font-family: Microsoft YaHei;
+	font-family: "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "STHeiti", sans-serif;
 	font-size: 30px;
 	text-shadow: 2px 2px 4px #000;
-	font-color: #000;
+	color: #000;
 	position: absolute;
 	left: 3%;
 	top: 4%;
 	opacity: 0;
+	-webkit-transition: all 0.5s;
 	transition: all 0.5s;
 }
 
@@ -833,14 +846,15 @@
 
 .ly-txt14 {
 	text-indent:2em;
-	font-family: Microsoft YaHei;
+	font-family: "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "STHeiti", sans-serif;
 	font-size: 18px;
-	font-color: #000;
+	color: #000;
 	position: absolute;
 	margin-left:30px;
 	margin-right:30px;
 	top: 12%;
 	opacity: 1;
+	-webkit-transition: all 13s;
 	transition: all 13s;
 	height:0;
 	width:88%;
@@ -869,6 +883,7 @@
 	-ms-border-radius: 10px;
 	-o-border-radius: 10px;
 	border-radius: 10px;
+	-webkit-transition: all 0.5s;
 	transition: all 0.5s;
 }
 .active .timepoint21 {
@@ -891,6 +906,7 @@
 	opacity: 0;
 	-webkit-transform: scale(0.5, 0.5);
 	transform: scale(0.5, 0.5);
+	-webkit-transition: all 1s;
 	transition: all 1s;
 }
 .active .ly-box21{
@@ -914,6 +930,7 @@
 	opacity: 0;
 	-webkit-transform: scale(0.5, 0.5);
 	transform: scale(0.5, 0.5);
+	-webkit-transition: all 0.5s;
 	transition: all 0.5s;
 }
 .active .ly-triangle21 {
@@ -932,6 +949,7 @@
 	border-radius: 8px;
 	opacity:0;
 	overflow: hidden;
+	-webkit-transition:all 0.5s;
 	transition:all 0.5s;
 }
 .active .ly-imgbox21{
@@ -945,14 +963,15 @@
 }
 /*文本*/
 .ly-txt21 {
-	font-family: Microsoft YaHei;
+	font-family: "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "STHeiti", sans-serif;
 	font-size: 30px;
 	text-shadow: 2px 2px 4px #000;
-	font-color: #000;
+	color: #000;
 	position: absolute;
 	left: 3%;
 	top: 2%;
 	opacity: 0;
+	-webkit-transition: all 0.5s;
 	transition: all 0.5s;
 }
 
@@ -963,14 +982,15 @@
 
 
 .ly-txt22 {
-	font-family: Microsoft YaHei;
+	font-family: "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "STHeiti", sans-serif;
 	font-size: 13px;
 	text-indent:2em;
-	font-color: #000;
+	color: #000;
 	position: absolute;
 	left: 5%;
 	top: 8%;
 	opacity: 0;
+	-webkit-transition: all 1s;
 	transition: all 1s;
 }
 
@@ -994,6 +1014,7 @@
 	opacity: 0;
 	-webkit-transform: scale(0.5, 0.5);
 	transform: scale(0.5, 0.5);
+	-webkit-transition: all 1s;
 	transition: all 1s;
 }
 .active .ly-box22{
@@ -1017,6 +1038,7 @@
 	opacity: 0;
 	-webkit-transform: scale(0.5, 0.5);
 	transform: scale(0.5, 0.5);
+	-webkit-transition: all 1s;
 	transition: all 1s;
 }
 .active .ly-triangle22 {
@@ -1028,14 +1050,15 @@
 }
 /*文本*/
 .ly-txt23 {
-	font-family: Microsoft YaHei;
+	font-family: "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "STHeiti", sans-serif;
 	font-size: 30px;
 	text-shadow: 2px 2px 4px #000;
-	font-color: #000;
+	color: #000;
 	position: absolute;
 	left: 3%;
 	top: 2%;
 	opacity: 0;
+	-webkit-transition: all 0.5s;
 	transition: all 0.5s;
 }
 
@@ -1046,14 +1069,15 @@
 
 .ly-txt24 {
 	text-indent:2em;
-	font-family: Microsoft YaHei;
+	font-family: "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "STHeiti", sans-serif;
 	font-size: 14px;
-	font-color: #000;
+	color: #000;
 	position: absolute;
 	width:80%;
 	top:11%;
 	margin-left:5%;
 	opacity: 0;
+	-webkit-transition: all 0.5s;
 	transition: all 0.5s;
 	width:88%;
 	overflow:hidden;
@@ -1072,6 +1096,7 @@
 	border-radius: 8px;
 	opacity:0;
 	overflow: hidden;
+	-webkit-transition:all 0.5s;
 	transition:all 0.5s;
 }
 .active .ly-imgbox22{
@@ -1097,6 +1122,7 @@
 	bottom:6%;
 	overflow: hidden;
 	opacity: 0.9;
+	-webkit-transition: all 10s;
 	transition: all 10s;
 }
 .active .ly-box23{
@@ -1118,6 +1144,7 @@
 	opacity: 0;
 	-webkit-transform: scale(0.5, 0.5);
 	transform: scale(0.5, 0.5);
+	-webkit-transition: all 1s;
 	transition: all 1s;
 }
 .active .ly-triangle23 {
@@ -1129,14 +1156,15 @@
 }
 /*文本*/
 .ly-txt25 {
-	font-family: Microsoft YaHei;
+	font-family: "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "STHeiti", sans-serif;
 	font-size: 30px;
 	text-shadow: 2px 2px 4px #000;
-	font-color: #000;
+	color: #000;
 	position: absolute;
 	left: 3%;
 	top: 2%;
 	opacity: 0;
+	-webkit-transition: all 0.5s;
 	transition: all 0.5s;
 }
 
@@ -1147,14 +1175,15 @@
 
 .ly-txt26 {
 	text-indent:2em;
-	font-family: Microsoft YaHei;
+	font-family: "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "STHeiti", sans-serif;
 	font-size: 14px;
-	font-color: #000;
+	color: #000;
 	position: absolute;
 	width:80%;
 	top:11%;
 	margin-left:5%;
 	opacity: 0;
+	-webkit-transition: all 0.5s;
 	transition: all 0.5s;
 	width:88%;
 	overflow:hidden;
@@ -1173,6 +1202,7 @@
 	border-radius: 8px;
 	opacity:0;
 	overflow: hidden;
+	-webkit-transition:all 0.5s;
 	transition:all 0.5s;
 }
 .active .ly-imgbox23{
@@ -1205,6 +1235,7 @@
 	-ms-border-radius: 10px;
 	-o-border-radius: 10px;
 	border-radius: 10px;
+	-webkit-transition: all 1s;
 	transition: all 1s;
 }
 .active .timepoint31 {
@@ -1226,6 +1257,7 @@
 	opacity: 0;
 	-webkit-transform: scale(0.5, 0.5);
 	transform: scale(0.5, 0.5);
+	-webkit-transition: all 1s;
 	transition: all 1s;
 }
 .active .ly-box31{
@@ -1249,6 +1281,7 @@
 	opacity: 0;
 	-webkit-transform: scale(0.5, 0.5);
 	transform: scale(0.5, 0.5);
+	-webkit-transition: all 0.5s;
 	transition: all 0.5s;
 }
 .active .ly-triangle31 {
@@ -1267,6 +1300,7 @@
 	border-radius: 8px;
 	opacity:0;
 	overflow: hidden;
+	-webkit-transition:all 0.5s;
 	transition:all 0.5s;
 }
 .active .ly-imgbox31{
@@ -1280,14 +1314,15 @@
 }
 /*文本*/
 .ly-txt31 {
-	font-family: Microsoft YaHei;
+	font-family: "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "STHeiti", sans-serif;
 	font-size: 30px;
 	text-shadow:2px 2px 4px #000;
-	font-color: #000;
+	color: #000;
 	position: absolute;
 	left: 3%;
 	top: 4%;
 	opacity: 0;
+	-webkit-transition: all 0.5s;
 	transition: all 0.5s;
 }
 
@@ -1298,15 +1333,16 @@
 
 
 .ly-txt32 {
-	font-family: Microsoft YaHei;
+	font-family: "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "STHeiti", sans-serif;
 	font-size: 20px;
 	text-indent:2em;
-	font-color: #000;
+	color: #000;
 	position: absolute;
 	padding-top: 20px;
 	left: 5%;
 	top: 12%;
 	opacity: 0;
+	-webkit-transition: all 1s;
 	transition: all 1s;
 }
 
@@ -1330,6 +1366,7 @@
 	opacity: 0;
 	-webkit-transform: scale(0.5, 0.5);
 	transform: scale(0.5, 0.5);
+	-webkit-transition: all 1s;
 	transition: all 1s;
 }
 .active .ly-box32{
@@ -1353,6 +1390,7 @@
 	opacity: 0;
 	-webkit-transform: scale(0.5, 0.5);
 	transform: scale(0.5, 0.5);
+	-webkit-transition: all 1s;
 	transition: all 1s;
 }
 .active .ly-triangle32 {
@@ -1364,14 +1402,15 @@
 }
 /*文本*/
 .ly-txt33 {
-	font-family: Microsoft YaHei;
+	font-family: "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "STHeiti", sans-serif;
 	font-size: 30px;
 	text-shadow: 2px 2px 4px #000;
-	font-color: #000;
+	color: #000;
 	position: absolute;
 	left: 3%;
 	top: 4%;
 	opacity: 0;
+	-webkit-transition: all 0.5s;
 	transition: all 0.5s;
 }
 
@@ -1382,14 +1421,15 @@
 
 .ly-txt34 {
 	text-indent:2em;
-	font-family: Microsoft YaHei;
+	font-family: "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "STHeiti", sans-serif;
 	font-size: 18px;
-	font-color: #000;
+	color: #000;
 	position: absolute;
 	margin-left:30px;
 	margin-right:30px;
 	top: 12%;
 	opacity: 1;
+	-webkit-transition: all 13s;
 	transition: all 13s;
 	height:0;
 	width:88%;
@@ -1408,6 +1448,7 @@
 	border-radius: 8px;
 	opacity:0;
 	overflow: hidden;
+	-webkit-transition:all 0.5s;
 	transition:all 0.5s;
 }
 .active .ly-imgbox31{
@@ -1434,6 +1475,7 @@
 	bottom:6%;
 	overflow: hidden;
 	opacity: 0.9;
+	-webkit-transition: all 10s;
 	transition: all 10s;
 }
 .active .ly-box51{
@@ -1442,14 +1484,15 @@
 }
 .ly-txt51 {
 	text-indent:2em;
-	font-family: Microsoft YaHei;
+	font-family: "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "STHeiti", sans-serif;
 	font-size: 14px;
-	font-color: #000;
+	color: #000;
 	position: absolute;
 	width:80%;
 	top:9%;
 	margin-left:5%;
 	opacity: 0;
+	-webkit-transition: all 0.5s;
 	transition: all 0.5s;
 	width:88%;
 	overflow:hidden;
@@ -1473,6 +1516,7 @@
 	opacity: 0;
 	-webkit-transform: scale(0.5, 0.5);
 	transform: scale(0.5, 0.5);
+	-webkit-transition: all 1s;
 	transition: all 1s;
 }
 .active .ly-box52{
@@ -1490,6 +1534,7 @@
 	border-radius: 8px;
 	opacity:0;
 	overflow: hidden;
+	-webkit-transition:all 0.5s;
 	transition:all 0.5s;
 }
 .active .ly-imgbox61{
@@ -1504,14 +1549,15 @@
 }
 .ly-txt61 {
 	text-indent:2em;
-	font-family: Microsoft YaHei;
+	font-family: "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "STHeiti", sans-serif;
 	font-size: 14px;
-	font-color: #000;
+	color: #000;
 	position: absolute;
 	width:80%;
 	top:9%;
 	margin-left:5%;
 	opacity: 0;
+	-webkit-transition: all 0.5s;
 	transition: all 0.5s;
 	width:88%;
 	overflow:hidden;
@@ -1522,6 +1568,8 @@
 	transition-delay: 14s;
 }
 .wwww1 {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
 	margin-before: 0.5em;
 	margin-after: 0.5em;
 	-webkit-margin-before: 0.5em;
@@ -1530,14 +1578,15 @@
 
 .ly-txt71 {
 	text-indent:2em;
-	font-family: Microsoft YaHei;
+	font-family: "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "STHeiti", sans-serif;
 	font-size: 14px;
-	font-color: #000;
+	color: #000;
 	position: absolute;
 	width:80%;
 	top:9%;
 	margin-left:5%;
 	opacity: 0;
+	-webkit-transition: all 0.5s;
 	transition: all 0.5s;
 	width:88%;
 	overflow:hidden;
@@ -1556,6 +1605,7 @@
 	border-radius: 8px;
 	opacity:0;
 	overflow: hidden;
+	-webkit-transition:all 0.5s;
 	transition:all 0.5s;
 }
 .active .ly-imgbox71{
@@ -1581,6 +1631,7 @@
 	opacity: 0;
 	-webkit-transform: scale(0.5, 0.5);
 	transform: scale(0.5, 0.5);
+	-webkit-transition: all 1s;
 	transition: all 1s;
 }
 .active .ly-box71{
@@ -1610,6 +1661,7 @@
 	-ms-border-radius: 10px;
 	-o-border-radius: 10px;
 	border-radius: 10px;
+	-webkit-transition: all 0.5s;
 	transition: all 0.5s;
 }
 .active .timepoint71 {
@@ -1630,6 +1682,7 @@
 	opacity: 0;
 	-webkit-transform: scale(0.5, 0.5);
 	transform: scale(0.5, 0.5);
+	-webkit-transition: all 1s;
 	transition: all 1s;
 }
 .active .ly-box72{
@@ -1652,6 +1705,7 @@
 	opacity: 0;
 	-webkit-transform: scale(0.5, 0.5);
 	transform: scale(0.5, 0.5);
+	-webkit-transition: all 1s;
 	transition: all 1s;
 }
 .active .ly-triangle71 {
@@ -1676,6 +1730,7 @@
 	opacity: 0;
 	-webkit-transform: scale(0.5, 0.5);
 	transform: scale(0.5, 0.5);
+	-webkit-transition: all 1s;
 	transition: all 1s;
 }
 .active .ly-box73{
@@ -1698,6 +1753,7 @@
 	opacity: 0;
 	-webkit-transform: scale(0.5, 0.5);
 	transform: scale(0.5, 0.5);
+	-webkit-transition: all 1s;
 	transition: all 1s;
 }
 .active .ly-triangle72 {
@@ -1709,14 +1765,15 @@
 }
 .ly-txt72 {
 	text-indent:2em;
-	font-family: Microsoft YaHei;
+	font-family: "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "STHeiti", sans-serif;
 	font-size: 14px;
-	font-color: #000;
+	color: #000;
 	position: absolute;
 	width:80%;
 	top:9%;
 	margin-left:5%;
 	opacity: 0;
+	-webkit-transition: all 0.5s;
 	transition: all 0.5s;
 	width:88%;
 	overflow:hidden;
@@ -1735,6 +1792,7 @@
 	border-radius: 8px;
 	opacity:0;
 	overflow: hidden;
+	-webkit-transition:all 0.5s;
 	transition:all 0.5s;
 }
 .active .ly-imgbox72{
@@ -1749,14 +1807,15 @@
 
 .ly-txt73 {
 	text-indent:2em;
-	font-family: Microsoft YaHei;
+	font-family: "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "STHeiti", sans-serif;
 	font-size: 14px;
-	font-color: #000;
+	color: #000;
 	position: absolute;
 	width:80%;
 	top:9%;
 	margin-left:5%;
 	opacity: 0;
+	-webkit-transition: all 0.5s;
 	transition: all 0.5s;
 	width:88%;
 	overflow:hidden;
@@ -1775,6 +1834,7 @@
 	border-radius: 8px;
 	opacity:0;
 	overflow: hidden;
+	-webkit-transition:all 0.5s;
 	transition:all 0.5s;
 }
 .active .ly-imgbox73{
@@ -1802,6 +1862,7 @@
 	opacity: 0;
 	-webkit-transform: scale(0.5, 0.5);
 	transform: scale(0.5, 0.5);
+	-webkit-transition: all 1s;
 	transition: all 1s;
 }
 .active .ly-box81{
@@ -1811,15 +1872,16 @@
 	transition-delay: 2.5s;
 }
 .ly-txt82 {
-	font-family: Microsoft YaHei;
+	font-family: "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "STHeiti", sans-serif;
 	font-size: 14px;
 	text-indent:1em;
-	font-color: #000;
+	color: #000;
 	position: absolute;
 	padding-top: 20px;
 	left: 5%;
 	top: 11%;
 	opacity: 0;
+	-webkit-transition: all 1s;
 	transition: all 1s;
 }
 
@@ -1836,6 +1898,7 @@
 	border-radius: 8px;
 	opacity:0;
 	overflow: hidden;
+	-webkit-transition:all 0.5s;
 	transition:all 0.5s;
 }
 .active .ly-imgbox81{
@@ -1862,6 +1925,7 @@
 	opacity: 0;
 	-webkit-transform: scale(0.5, 0.5);
 	transform: scale(0.5, 0.5);
+	-webkit-transition: all 1s;
 	transition: all 1s;
 }
 .active .ly-box82{
@@ -1885,6 +1949,7 @@
 	opacity: 0;
 	-webkit-transform: scale(0.5, 0.5);
 	transform: scale(0.5, 0.5);
+	-webkit-transition: all 1s;
 	transition: all 1s;
 }
 .active .ly-triangle82 {
@@ -1899,14 +1964,15 @@
 
 .ly-txt84 {
 	text-indent:2em;
-	font-family: Microsoft YaHei;
+	font-family: "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "STHeiti", sans-serif;
 	font-size: 15px;
-	font-color: #000;
+	color: #000;
 	position: absolute;
 	margin-left:30px;
 	margin-right:30px;
 	top: 12%;
 	opacity: 1;
+	-webkit-transition: all 33s;
 	transition: all 33s;
 	height:0;
 	width:88%;
@@ -1918,14 +1984,15 @@
 	transition-delay: 6.5s;
 }
 .ly-txt90 {
-	font-family: Microsoft YaHei;
+	font-family: "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "STHeiti", sans-serif;
 	font-size: 14px;
-	font-color: #000;
+	color: #000;
 	position: absolute;
 	width:80%;
 	top:9%;
 	margin-left:5%;
 	opacity: 0;
+	-webkit-transition: all 0.5s;
 	transition: all 0.5s;
 	width:88%;
 	overflow:hidden;
@@ -1936,14 +2003,15 @@
 	transition-delay: 4.5s;
 }
 .ly-txt91 {
-	font-family: Microsoft YaHei;
+	font-family: "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "STHeiti", sans-serif;
 	font-size: 14px;
-	font-color: #000;
+	color: #000;
 	position: absolute;
 	width:80%;
 	top:9%;
 	margin-left:5%;
 	opacity: 0;
+	-webkit-transition: all 0.5s;
 	transition: all 0.5s;
 	width:88%;
 	overflow:hidden;
@@ -1962,6 +2030,7 @@
 	border-radius: 8px;
 	opacity:0;
 	overflow: hidden;
+	-webkit-transition:all 0.5s;
 	transition:all 0.5s;
 }
 .active .ly-imgbox91{
@@ -1987,6 +2056,7 @@
 	opacity: 0;
 	-webkit-transform: scale(0.5, 0.5);
 	transform: scale(0.5, 0.5);
+	-webkit-transition: all 1s;
 	transition: all 1s;
 }
 .active .ly-box91{
@@ -2016,6 +2086,7 @@
 	-ms-border-radius: 10px;
 	-o-border-radius: 10px;
 	border-radius: 10px;
+	-webkit-transition: all 0.5s;
 	transition: all 0.5s;
 }
 .active .timepoint91 {
@@ -2036,6 +2107,7 @@
 	opacity: 0;
 	-webkit-transform: scale(0.5, 0.5);
 	transform: scale(0.5, 0.5);
+	-webkit-transition: all 1s;
 	transition: all 1s;
 }
 .active .ly-box92{
@@ -2058,6 +2130,7 @@
 	opacity: 0;
 	-webkit-transform: scale(0.5, 0.5);
 	transform: scale(0.5, 0.5);
+	-webkit-transition: all 1s;
 	transition: all 1s;
 }
 .active .ly-triangle91 {
@@ -2082,6 +2155,7 @@
 	opacity: 0;
 	-webkit-transform: scale(0.5, 0.5);
 	transform: scale(0.5, 0.5);
+	-webkit-transition: all 1s;
 	transition: all 1s;
 }
 .active .ly-box93{
@@ -2104,6 +2178,7 @@
 	opacity: 0;
 	-webkit-transform: scale(0.5, 0.5);
 	transform: scale(0.5, 0.5);
+	-webkit-transition: all 1s;
 	transition: all 1s;
 }
 .active .ly-triangle92 {
@@ -2115,14 +2190,15 @@
 }
 .ly-txt92 {
 	text-indent:2em;
-	font-family: Microsoft YaHei;
+	font-family: "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "STHeiti", sans-serif;
 	font-size: 14px;
-	font-color: #000;
+	color: #000;
 	position: absolute;
 	width:80%;
 	top:9%;
 	margin-left:5%;
 	opacity: 0;
+	-webkit-transition: all 0.5s;
 	transition: all 0.5s;
 	width:88%;
 	overflow:hidden;
@@ -2141,6 +2217,7 @@
 	border-radius: 8px;
 	opacity:0;
 	overflow: hidden;
+	-webkit-transition:all 0.5s;
 	transition:all 0.5s;
 }
 .active .ly-imgbox92{
@@ -2155,14 +2232,15 @@
 
 .ly-txt93 {
 	text-indent:2em;
-	font-family: Microsoft YaHei;
+	font-family: "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "STHeiti", sans-serif;
 	font-size: 14px;
-	font-color: #000;
+	color: #000;
 	position: absolute;
 	width:80%;
 	top:9%;
 	margin-left:5%;
 	opacity: 0;
+	-webkit-transition: all 0.5s;
 	transition: all 0.5s;
 	width:88%;
 	overflow:hidden;
@@ -2181,6 +2259,7 @@
 	border-radius: 8px;
 	opacity:0;
 	overflow: hidden;
+	-webkit-transition:all 0.5s;
 	transition:all 0.5s;
 }
 .active .ly-imgbox93{
